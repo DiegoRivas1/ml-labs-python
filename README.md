@@ -1,0 +1,63 @@
+# 🤖 Machine Learning
+
+Repositorio de aprendizaje progresivo de Machine Learning con notebooks prácticos en Python.
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+MACHINE_LEARNING/
+│
+├── README.md
+├── requirements.txt
+├── main.py
+│
+├── data/               ← datasets utilizados
+└── notebooks/          ← laboratorios prácticos
+```
+
+---
+
+## 📓 Notebooks
+
+| # | Laboratorio | Temas |
+|---|---|---|
+| 01 | [Regresión Lineal](notebooks/lab_01_regresion_lineal.ipynb) | Modelo lineal, MSE, predicción |
+
+> 🔄 Se irán agregando nuevos notebooks progresivamente.
+
+---
+
+## 🚀 Cómo ejecutar
+
+### Opción 1 — Local
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/MACHINE_LEARNING.git
+cd MACHINE_LEARNING
+
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Abrir Jupyter
+jupyter notebook
+```
+
+### Opción 2 — En la nube (sin instalar nada)
+
+Abre cualquier notebook directamente en Google Colab haciendo clic en el enlace del laboratorio y luego en el botón **"Open in Colab"**, o reemplazando `github.com` por `githubtocolab.com` en la URL.
+
+---
+
+## 🛠️ Requisitos
+
+Ver [`requirements.txt`](requirements.txt) para la lista completa de dependencias.
+
+---
+
+## 📌 Notas
+
+- Cada notebook es independiente y contiene explicaciones en celdas Markdown.
+- Los datasets usados se encuentran en la carpeta `data/`.
