@@ -21,10 +21,11 @@ MACHINE_LEARNING/
 
 ## 📓 Notebooks
 
-| # | Laboratorio | Temas |
-|---|---|---|
-| 01 | [Regresión Lineal](notebooks/01-regresion-lineal/lab_01_regresion_lineal.ipynb) | Modelo lineal, MSE, predicción |
-| 02 | [Regresión Logística](notebooks/02-regresion-logistica/lab_02_regresion_logistica.ipynb) | OLS vs logística, función sigmoide, métricas de clasificación | Sintético (`make_classification`) |
+| #   | Laboratorio | Temas | Dataset |
+|-----|---|---|---|
+| 01  | [Regresión Lineal](notebooks/01-regresion-lineal/lab_01_regresion_lineal.ipynb) | OLS, estandarización, polinomial, sesgo-varianza | `data/concrete.csv` |
+| 02  | [Regresión Logística](notebooks/02-regresion-logistica/lab_02_regresion_logistica.ipynb) | OLS vs logística, sigmoide, outliers, métricas de clasificación | Sintético (`make_classification`) |
+| 03  | [Logística con Gradient Descent](notebooks/03-regresion-logistica/lab_03_regresion_logistica.ipynb) | BCE, gradiente vectorizado, GD manual, clase con API sklearn | Sintético (NumPy) |
 > 🔄 Se irán agregando nuevos notebooks progresivamente.
 
 ---
