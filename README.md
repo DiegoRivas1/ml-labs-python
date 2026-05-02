@@ -68,7 +68,7 @@ jupyter notebook
 Reemplaza `github.com` por `githubtocolab.com` en la URL de cualquier notebook,
 o haz clic en el enlace y luego en **"Open in Colab"**.
 
-> Para el proyecto final, sube la carpeta `06-proyecto-final/data/` a tu entorno de Colab
+> Para ell proyecto final, sube la carpeta `06-proyecto-final/data/` a tu entorno de Colab
 > o monta tu Google Drive antes de ejecutar.
 
 ---
