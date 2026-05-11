@@ -41,7 +41,7 @@ MACHINE_LEARNING/
 | 04 | [MLP desde Cero](notebooks/04-mlp-capas-fijas/lab_04_mlp_capas_fijas.ipynb)                            | Forward pass, backpropagation escalar, SGD, Early Stopping, feature scaling | Breast Cancer (sklearn) |
 | 05A | [MLP Matricial — CCE](notebooks/05-mlp-matricial/lab_05a_mlp_cce.ipynb)                                | MLP vectorizado, ReLU, Softmax, CCE, inicializaciones (Normal/Xavier/He) | Sintético (`make_moons`) |
 | 05B | [MLP Matricial — MSE](notebooks/05-mlp-matricial/lab_05b_mlp_mse.ipynb)                                | MLP vectorizado, regresión, identidad, MSE, superficie 3D | Sintético (NumPy) |
-| 06 | [Métodos Supervisados](notebooks/06-metodos-supervisados/lab06_metodos_supervisado_resuelto.ipynb)     | LDA, SVM, KNN, Árboles, Random Forest, XGBoost; impacto de normalización en clasificación y regresión | Wine & California Housing (sklearn) |
+| 06 | [Métodos Supervisados](notebooks/06-metodos-supervisados/lab06_metodos_supervisados_resuelto.ipynb)    | LDA, SVM, KNN, Árboles, Random Forest, XGBoost; impacto de normalización en clasificación y regresión | Wine & California Housing (sklearn) |
 
 ---
 
