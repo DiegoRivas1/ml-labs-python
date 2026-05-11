@@ -22,7 +22,8 @@ MACHINE_LEARNING/
     ├── 03-regresion-logistica-gd/
     ├── 04-mlp-capas-fijas/
     ├── 05-mlp-matricial/
-    └── 06-proyecto-final/
+    ├── 06-metodos-supervisados/
+    └── 07-proyecto-final/
         └── data/                ← datasets específicos del proyecto
             ├── adult.csv
             └── housing.csv
@@ -32,14 +33,15 @@ MACHINE_LEARNING/
 
 ## 📓 Laboratorios
 
-| # | Laboratorio | Temas | Dataset |
-|---|---|---|---|
-| 01 | [Regresión Lineal](notebooks/01-regresion-lineal/lab_01_regresion_lineal.ipynb) | OLS, estandarización, polinomial, sesgo-varianza | `data/concrete.csv` |
-| 02 | [Regresión Logística](notebooks/02-regresion-logistica/lab_02_regresion_logistica.ipynb) | OLS vs logística, sigmoide, outliers, métricas de clasificación | Sintético (`make_classification`) |
+| # | Laboratorio                                                                                            | Temas | Dataset |
+|---|--------------------------------------------------------------------------------------------------------|---|---|
+| 01 | [Regresión Lineal](notebooks/01-regresion-lineal/lab_01_regresion_lineal.ipynb)                        | OLS, estandarización, polinomial, sesgo-varianza | `data/concrete.csv` |
+| 02 | [Regresión Logística](notebooks/02-regresion-logistica/lab_02_regresion_logistica.ipynb)               | OLS vs logística, sigmoide, outliers, métricas de clasificación | Sintético (`make_classification`) |
 | 03 | [Logística con Gradient Descent](notebooks/03-regresion-logistica-gd/lab_03_regresion_logistica.ipynb) | BCE, gradiente vectorizado, GD manual, clase con API sklearn | Sintético (NumPy) |
-| 04 | [MLP desde Cero](notebooks/04-mlp-capas-fijas/lab_04_mlp_capas_fijas.ipynb) | Forward pass, backpropagation escalar, SGD, Early Stopping, feature scaling | Breast Cancer (sklearn) |
-| 05A | [MLP Matricial — CCE](notebooks/05-mlp-matricial/lab_05a_mlp_cce.ipynb) | MLP vectorizado, ReLU, Softmax, CCE, inicializaciones (Normal/Xavier/He) | Sintético (`make_moons`) |
-| 05B | [MLP Matricial — MSE](notebooks/05-mlp-matricial/lab_05b_mlp_mse.ipynb) | MLP vectorizado, regresión, identidad, MSE, superficie 3D | Sintético (NumPy) |
+| 04 | [MLP desde Cero](notebooks/04-mlp-capas-fijas/lab_04_mlp_capas_fijas.ipynb)                            | Forward pass, backpropagation escalar, SGD, Early Stopping, feature scaling | Breast Cancer (sklearn) |
+| 05A | [MLP Matricial — CCE](notebooks/05-mlp-matricial/lab_05a_mlp_cce.ipynb)                                | MLP vectorizado, ReLU, Softmax, CCE, inicializaciones (Normal/Xavier/He) | Sintético (`make_moons`) |
+| 05B | [MLP Matricial — MSE](notebooks/05-mlp-matricial/lab_05b_mlp_mse.ipynb)                                | MLP vectorizado, regresión, identidad, MSE, superficie 3D | Sintético (NumPy) |
+| 06 | [Métodos Supervisados](notebooks/06-metodos-supervisados/lab06_metodos_supervisado_resuelto.ipynb)     | LDA, SVM, KNN, Árboles, Random Forest, XGBoost; impacto de normalización en clasificación y regresión | Wine & California Housing (sklearn) |
 
 ---
 
@@ -47,14 +49,14 @@ MACHINE_LEARNING/
 
 | Entrega | Notebook | Temas | Datasets |
 |---|---|---|---|
-| Parcial | [Entrega Parcial](notebooks/06-proyecto-final/proyecto_final_entrega_parcial.ipynb) | EDA, preprocesamiento, regresión lineal y logística con GD desde cero | `adult.csv`, `housing.csv` |
+| Parcial | [Entrega Parcial](notebooks/07-proyecto-final/proyecto_final_entrega_parcial.ipynb) | EDA, preprocesamiento, regresión lineal y logística con GD desde cero | `adult.csv`, `housing.csv` |
 | Final | — | MLP configurable, comparación con modelos lineales | `adult.csv`, `housing.csv` |
 
 ---
 
 ## 🚀 Cómo ejecutar
 
-### Opción 1 Local
+### Opción 1 — Local
 
 ```bash
 git clone https://github.com/tu-usuario/MACHINE_LEARNING.git
@@ -63,12 +65,12 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-### Opción 2 Google Colab
+### Opción 2 — Google Colab
 
 Reemplaza `github.com` por `githubtocolab.com` en la URL de cualquier notebook,
 o haz clic en el enlace y luego en **"Open in Colab"**.
 
-> Para ell proyecto final, sube la carpeta `06-proyecto-final/data/` a tu entorno de Colab
+> Para el proyecto final, sube la carpeta `07-proyecto-final/data/` a tu entorno de Colab
 > o monta tu Google Drive antes de ejecutar.
 
 ---
@@ -80,6 +82,7 @@ numpy>=1.24.0
 pandas>=2.0.0
 matplotlib>=3.7.0
 scikit-learn>=1.3.0
+xgboost>=2.0.0
 plotly>=5.0.0
 jupyter>=1.0.0
 notebook>=7.0.0
@@ -91,7 +94,8 @@ Ver [`requirements.txt`](requirements.txt) para la lista completa.
 
 ## 📌 Notas
 
-- Los laboratorios 01–05 son ejercicios guiados con celdas `# TODO` y análisis de resultados.
+- Los laboratorios 01–06 son ejercicios guiados con celdas `# TODO` y análisis de resultados.
 - El lab 05 usa el **patrón Strategy** para intercambiar inicializaciones sin duplicar código.
-- El proyecto final (06) implementa pipelines completos sobre datos reales con clases en NumPy.
-- Los datasets de laboratorio están en `data/`; los del proyecto en `notebooks/06-proyecto-final/data/`.
+- El lab 06 compara algoritmos clásicos de sklearn y XGBoost, analizando qué modelos son sensibles a la escala y cuáles son invariantes.
+- El proyecto final (07) implementa pipelines completos sobre datos reales con clases en NumPy.
+- Los datasets de laboratorio están en `data/`; los del proyecto en `notebooks/07-proyecto-final/data/`.
