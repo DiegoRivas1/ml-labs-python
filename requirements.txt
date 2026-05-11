@@ -9,3 +9,6 @@ notebook>=7.0.0
 
 # Lab 05 y Proyecto Final
 plotly>=5.0.0
+
+# Lab 06 - Métodos Supervisados
+xgboost>=2.0.0
